@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" type = "text/css" href= "inspiration3.css" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <script type= "text/javascript"> // script Jquery permettant d'aller jusqu'aux ancrages de manières fluide
+    $(document).ready(function(){
+      $("a[href='#do13']").click(function() {
+    $('html, body').animate({scrollTop: $(document).height()}, 'slow');
+    return false;
+    });
+  });
+</script>
+    <script>
+      function doundo(y) { //fonction pour afficher ou non les élements interactif quand on passe la souris dessus//
+        var x = document.getElementById(y) ;
+          if (x.style.opacity == 1) {
+          x.style.opacity = 0;
+          }
+        else {
+          x.style.opacity = 1;
+      }
+    }
+      function hide() { //fonctions pour afficher le menu et cacher/montrer des élements interactifs
+        var a = document.getElementById("do1") ;
+        var b = document.getElementById("do11");
+        var c = document.getElementById("redo11") ;
+        var d = document.getElementById("undo11");
+        var e = document.getElementById("do12");
+        var f = document.getElementById("redo12");
+        var g = document.getElementById("undo12");
+        a.style.visibility = "hidden" ;
+        b.style.visibility = "hidden" ;
+        c.style.visibility = "hidden" ;
+        d.style.visibility = "hidden" ;
+        e.style.visibility = "hidden" ;
+        f.style.visibility = "hidden" ;
+        g.style.visibility = "hidden" ;
+      }
+
+      function hide2() {
+        var a = document.getElementById("do1") ;
+        var b = document.getElementById("do11");
+        var c = document.getElementById("redo11") ;
+        var d = document.getElementById("undo11");
+        var e = document.getElementById("do12");
+        var f = document.getElementById("redo12");
+        var g = document.getElementById("undo12");
+        a.style.visibility = "visible" ;
+        b.style.visibility = "visible" ;
+        c.style.visibility = "visible" ;
+        d.style.visibility = "visible" ;
+        e.style.visibility = "visible" ;
+        f.style.visibility = "visible" ;
+        g.style.visibility = "visible" ;
+      }
+
+      </script>
+
+    <div class= "menu" id = "menu1" onmouseover = "hide()" onmouseout = "hide2()"></div>
+    <a class = "lien" href= "http://2016.csmpostgradart.com/"><div>LIEN</div></a>
+    <a id= "notice"  href= "#do13">NOTICE</a>
+    <div id = "menu2"><p class = "description">Le site affiche inlassablement les mêmes mots qui apparaissent ou disparaissent au gré de la position du curseur.Chaque menu accessible déclenche une animation de scrolling sur les élement au centre de l'écran tout en restant au même niveau sur la page.</p></div>
+    <span id = "do1" onmouseover= doundo("do1")>DO(NOT)</span>   // série d'élements interactifs //
+    <span id = "redo1" onmouseover= doundo("redo1")>REDO(NOT)</span>
+    <span id = "undo1" onmouseover= doundo("undo1")>UNDO(NOT)</span>
+    <span id = "do2" onmouseover= doundo("do2")>DO(NOT)</span>
+    <span id = "redo2" onmouseover= doundo("redo2")>REDO(NOT)</span>
+    <span id = "undo2" onmouseover= doundo("undo2")>UNDO(NOT)</span>
+    <span id = "do3" onmouseover= doundo("do3")>DO(NOT)</span>
+    <span id = "redo3" onmouseover= doundo("redo3")>REDO(NOT)</span>
+    <span id = "undo3" onmouseover= doundo("undo3")>UNDO(NOT)</span>
+    <span id = "do4" onmouseover= doundo("do4")>DO(NOT)</span>
+    <span id = "redo4" onmouseover= doundo("redo4")>DO(NOT)</span>
+    <span id = "undo4" onmouseover = doundo("undo3")>UNDO(NOT)</span>
+    <span id = "do5" onmouseover = doundo("do5")>DO(NOT)</span>
+    <span id = "redo5" onmouseover = doundo("redo5")>REDO(NOT)</span>
+    <span id = "undo5" onmouseover = doundo("undo5")>UNDO(NOT)</span>
+    <span id = "do6" onmouseover = doundo("do6")>DO(NOT)</span>
+    <span id = "redo6" onmouseover = doundo("redo6")>REDO(NOT)</span>
+    <span id = "undo6" onmouseover = doundo("undo6")>UNDO(NOT)</span>
+    <span id = "do7"  onmouseover = doundo("do7")>DO(NOT)</span>
+    <span id = "redo7" onmouseover = doundo("redo7")>REDO(NOT)</span>
+    <span id = "undo7" onmouseover = doundo("undo7")>UNDO(NOT)</span>
+    <span id = "do8"  onmouseover = doundo("do8")>DO(NOT)</span>
+    <span id = "redo8" onmouseover = doundo("redo8")>REDO(NOT)</span>
+    <span id = "undo8" onmouseover = doundo("undo8")>UNDO(NOT)</span>
+    <span id = "do9" onmouseover = doundo("do9")>DO(NOT)</span>
+    <span id = "redo9" onmouseover = doundo("redo9")>REDO(NOT)</span>
+    <span id = "undo9" onmouseover = doundo("undo9")>UNDO(NOT)</span>
+    <span id = "do10"  onmouseover = doundo("do10")>DO(NOT)</span>
+    <span id = "redo10" onmouseover = doundo("redo10")>REDO(NOT)</span>
+    <span id = "undo10" onmouseover = doundo("undo10")>UNDO(NOT)</span>
+    <span id = "do11" onmouseover = doundo("do11")>DO(NOT)</span>
+    <span id = "redo11" onmouseover = doundo("redo11")>REDO(NOT)</span>
+    <span id = "undo11" onmouseover = doundo("undo11")>UNDO(NOT)</span>
+    <span id = "do12" onmouseover = doundo("do12")>UNDO(NOT)</span>
+    <span id = "redo12" onmouseover = doundo("redo12")>REDO(NOT)</span>
+    <span id = "undo12" onmouseover = doundo("undo12")>UNDO(NOT)</span>
+    <span id = "do13" name = "do13"  onmouseover = doundo("do13")>DO(NOT)</span>
+    <span id = "redo13" onmouseover = doundo("redo13")>DO(NOT)</span>
+    <span id = "undo13" onmouseover = doundo("undo13")>UNDO(NOT)</span>
+    <span id = "do14" onmouseover = doundo("do14")>DO(NOT)</span>
+    <span id = "redo14" onmouseover = doundo("redo14")>REDO(NOT)</span>
+    <span id = "undo14" onmouseover = doundo("undo14")>UNDO(NOT)</span>
+    <span id = "do15"   onmouseover = doundo("do15")>DO(NOT)</span>
+    <span id = "redo15" onmouseover = doundo("redo15")>REDO(NOT)</span>
+    <span id = "undo15" onmouseover = doundo("undo15")>UNDO(NOT)</span>
+    <span id = "do16"   onmouseover= doundo("do16")>DO(NOT)</span>
+    <span id = "redo16"   onmouseover = doundo("redo16")>REDO(NOT)</span>
+    <span id = "undo16"  onmouseover = doundo("undo16")>UNDO(NOT)</span>
+    <span id = "do17"    onmouseover = doundo("do17")>DO(NOT)</span>
+    <span id = "redo17"  onmouseover = doundo("redo17")>REDO(NOT)</span>
+    <span id = "undo17"  onmouseover = doundo("undo17")>UNDO(NOT)</span>
+    <span id = "do18"    onmouseover = doundo("do18")>DO(NOT)</span>
+    <span id = "redo18"  onmouseover = doundo("redo18")>REDO(NOT)</span>
+    <span id = "undo18"  onmouseover = doundo("undo18")>UNDO(NOT)</span>
+    <span id = "do19"    onmouseover = doundo("do19")>DO(NOT)</span>
+    <span id = "redo19"  onmouseover = doundo("redo19")>REDO(NOT)</span>
+    <span id = "undo19"  onmouseover = doundo("undo19")>UNDO(NOT)</span>
+    <span id = "do20"    onmouseover = doundo("do20")>DO(NOT)</span>
+    <span id = "redo20"  onmouseover = doundo("redo20")>REDO(NOT)</span>
+    <span id = "undo20"  onmouseover = doundo("undo20")>UNDO(NOT)</span>
+    <span id = "do21"    onmouseover = doundo("do21")>DO(NOT)</span>
+    <span id = "redo21"  onmouseover = doundo("redo21")>REDO(NOT)</span>
+    <span id = "do22"     onmouseover = doundo("do22")>DO(NOT)</span>
+    <span id = "redo22"    onmouseover = doundo("redo22")>REDO(NOT)</span>
+    <span id = "undo22"    onmouseover = doundo("undo22")>UNDO(NOT)</span>
+    <span id = "do23"      onmouseover = doundo("do23")>DO(NOT)</span>
+    <span id = "redo23"    onmouseover = doundo("redo23")>REDO(NOT)</span>
+    <span id = "undo23"    onmouseover = doundo("undo23")>UNDO(NOT)</span>
+    <span id = "do24"      onmouseover = doundo("do24")>DO(NOT)</span>
+    <span id = "redo24"      onmouseover = doundo("redo24")>REDO(NOT)</span>
+    <span id = "undo24"     onmouseover = doundo("undo24")>UNDO(NOT)</span>
+    <span id = "do25"        onmouseover = doundo("do25")>DO(NOT)</span>
+    <span id = "redo25"     onmouseover = doundo("redo25")>REDO(NOT)</span>
+    <span id = "undo25"     onmouseover = doundo("undo25")>UNDO(NOT)</span>
+
+
+  </body>
+</html>

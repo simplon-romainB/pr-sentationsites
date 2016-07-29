@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" type = "text/css" href= "inspiration4.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="curtain.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var o = 0;
+    function defilement() { // fonction pour permettre de bouger les élements avec la molette de la souris//
+      var s = document.getElementById("pictoun"); //la variable o permet de bouger réinitialiser la position des élements interactifs//
+      var q = document.getElementById("picto2");
+      var r = document.getElementById("picto3");
+      var t = document.getElementById("culture");
+      var v = document.getElementById("photo4");
+      if (o < 1){
+      r.style.transform = "translate(-100px,-50px)";
+      s.style.transform = "translateY(30px)" ;
+      q.style.transform = "translate(-120px, -70px)";
+      t.style.transform = "scale(2)" ;
+      v.style.transform = "translate(-60px,-50px)";
+      o ++;
+    }
+      else {
+      s.style.transform = "translateY(-30px)";
+      q.style.transform = "translate(120px, 70px)";
+      r.style.transform = "translate(100px, 50px)" ;
+      t.style.transform = "scale(1)" ;
+      v.style.transform = "translate(60px, 50px)";
+      o -- ;
+      }
+  }
+
+  function bouton1() { //fonction faisant apparaitre le petit menu en bas à droite.....
+    var a =document.getElementById("menu");
+    a.style.transform = "translateX(-100px)";
+  }
+
+  function bouton2() {//......et le faisant isparaitre//
+    var a =document.getElementById("menu");
+    a.style.transform = "translateX(100px)";
+  }
+
+    </script>
+  </head>
+  <body>
+    <iframe class= "video2" src="gif2.gif" frameborder="0" scrolling="no" width='480' height='360'  ></iframe> //integrations de video sous forme de gif
+    <iframe class= "video" src="gif.gif" frameborder="0" scrolling="no" width='1286px' height='720px' ></iframe>
+    <img src ="polcine1.jpg" id = "picto3" />
+    <img src= "picto2.jpg" id = "pictoun"  />
+    <img src= "pictorialism.jpg" id = "picto2" /></a>
+    <img src= "photo4.png" id = "photo4" />
+    <div id= "cadrebas">
+      <img src="si-glyph-thermometer.svg" id = "bouton" onmouseover = "bouton1()" onmouseout = "bouton2()" />
+      <div id = "menu">
+      <div id = "description">site utilisant de nombreux effets de parallaxe, la navigation se fait entièrement à la souris pour un résultat aussi ergonomique qu'ésthetique</div>
+      </div>
+    </div>
+    <a href="http://culture.pl/multimediaguides/photography/the-avant-garde/1"><img src= "culture.png" id = "culture" />
+    <div class= "transparent" onwheel= "defilement()"></div>
+  </body>
+</html>

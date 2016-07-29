@@ -1,0 +1,231 @@
+
+
+html {
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+
+
+
+}
+.fond {
+  width:100%;
+  height:800px;
+  position: absolute;
+  background-color: #A49D9D;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+
+.menu {
+  height: 700px;
+  width: 200px;
+  position: relative;
+  background-color: black;
+  left: -190px;
+  top: -30px;
+  transition:all 0.5s ease;
+  z-index: 1;
+  margin-right: 20px;
+
+}
+ .menu:hover {
+   height: 100%;
+   transform: translateX(-10px);
+   height: 700px;
+   width: 200px;
+   position: relative;
+   background-color: black;
+   left: 0;
+   top: -30px;
+   z-index: 1;
+   transition: all 0.5s ease;
+}
+#screenirwin {
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  left: 75px;
+  top: 120px;
+  transition: all 0.1s;
+  visibility: hidden;
+  z-index: 1;
+
+ }
+.matt {
+  height: 100% ;
+  width: 500px ;
+  right: -480px ;
+  position: absolute;
+  top: 0;
+  transition:all 0.5s ease;
+  z-index: 2;
+
+
+
+}
+
+.matt:hover {
+  height: 100% ;
+  width: 500px ;
+  right: -480px ;
+  position: absolute;
+  top: 0;
+  transform: translateX(-470px);
+  z-index: 2;
+}
+
+.irwin {
+  position: absolute;
+  right: 380px;
+  top: 300px;
+  width: 100px;
+  height: 50px;
+  visibility: hidden;
+
+  text-decoration: none ;
+  z-index: 3;
+
+
+
+}
+.mattirwinlien {
+  position: absolute;
+  font-size: 32px;
+  color: black;
+  font-weight: bolder;
+}
+
+.undo1 {
+  position: absolute;
+  left: 30px;
+  color: white;
+  z-index: 3;
+  width: 50px;
+  height: 20px;
+  top: 50px;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 40px;
+}
+#irwintexte1 {
+  position: absolute;
+  z-index: 2;
+  font-size: 50px;
+  left: 100px;
+  top: 20px;
+  visibility: hidden;
+  background-color: transparent;
+  color: black;
+}
+#do {
+  position: absolute;
+  left: 200px;
+  color: white;
+  z-index: 3;
+  width: 50px;
+  height: 20px;
+  top: 100px;
+  font-weight: bold;
+  font-size: 40px;
+
+}
+#clicheton {
+  position: absolute ;
+  bottom: -200px;
+  height: 250px;
+  width: 50%;
+  transition:all 0.5s ease;
+  left: 270px;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+#clicheton:hover {
+  position: absolute ;
+  bottom: -200px;
+  height: 250px;
+  width: 50%;
+  transform: translateY(-190px);
+  left: 270px;
+  z-index: 1;
+  transition: all 0.5s ease ;
+  border-radius: 50% ;
+}
+
+#clicheton2 {
+  position: absolute;
+  bottom: -200px;
+  height: 300px;
+  width: 300px;
+  left: 200px;
+  transition:all 0.8s ease;
+  z-index: 2;
+  border-radius: 50%;
+
+}
+
+#clicheton3 {
+  position: absolute;
+  bottom: -200px;
+  height: 300px;
+  width: 300px;
+  left: 650px;
+  transition:all 0.8s ease;
+  z-index: 2;
+  border-radius: 50%;
+
+}
+
+#textepologne {
+  position: absolute;
+  top: 20px;
+  font-weight: bold;
+  font-size:40px;
+  visibility:hidden;
+  left: 20px;
+}
+#redo1 {
+  position: absolute;
+  top : 200px;
+  left: 200px;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+#screenredo {
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  top: 75px ;
+  left: 500px;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#fondphoto {
+  width:100%;
+  height:800px;
+  position: absolute;
+  background-color: #A49D9D;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+
+#triangle {
+  border: 1px solid ;
+  border-top: 250px solid black;
+  border-right: 125px solid transparent ;
+  border-left: 125px solid transparent;
+  width: 0;
+  height: 0;
+  left: 38%;
+  top: 65px;
+  margin:100px auto;
+  position: absolute;
+}
